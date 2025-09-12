@@ -18,6 +18,11 @@ body {
   font-weight: 900;
 }
 
+h2 {
+  margin: 5px;
+  text-align: center; /* si quieres mantener el centrado */
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
