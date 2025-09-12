@@ -6,7 +6,7 @@ const products = [
     price: "$149.990",
     originalPrice: "$201.990",
     img: "Magic Keyboard (USB-C) - Español (América Latina).jpeg",
-    stock: "No disponible"
+    stock: "Disponible"
   },
   {
     title: "Apple Pencil Usb C",
@@ -14,7 +14,7 @@ const products = [
     price: "$124.990",
     originalPrice: "$137.990",
     img: "tagclappenuc00_370_other_1.webp",
-    stock: "No disponible"
+    stock: "Disponible"
   },
   {
     title: "AirTag",
