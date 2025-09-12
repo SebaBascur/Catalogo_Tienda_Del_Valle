@@ -18,7 +18,7 @@ const products = [
   },
   {
     title: "AirTag",
-    desc: "Pierde la costumbre de perder las cosas Colócalo en llaves, mochila u otros accesorios y encuentra su ubicación fácilmente desde la app Encontrar en tu iPhone. Evita pérdidas y mantén el control de tus pertenencias personales. Compra antes de las 13:00 hrs, llega el mismo día",
+    desc: "Úsalo en llaves, mochila u objetos personales y localízalos con la app Encontrar en tu iPhone.",
     price: "$36.990",
     originalPrice: "$40.990",
     img: "airtag-double-select-202104.jpeg",
@@ -155,7 +155,42 @@ const products = [
     img: "verde.png",
     stock: "Disponible"
   },  
+  {
+    title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Rosa",
+    desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
+    price: "$8.980",
+    // originalPrice: "$19.990",
+    img: "rosaBuds.png",
+    stock: "Disponible"
+  }, 
 
+  {
+    title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Gris",
+    desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
+    price: "$8.980",
+    // originalPrice: "$19.990",
+    img: "grisBuds.png",
+    stock: "Disponible"
+  }, 
+    {
+    title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Verde",
+    desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
+    price: "$8.980",
+    // originalPrice: "$19.990",
+    img: "verdeBuds.png",
+    stock: "Disponible"
+  }, 
+    {
+    title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Negro",
+    desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
+    price: "$8.980",
+    // originalPrice: "$19.990",
+    img: "negroBuds.png",
+    stock: "Disponible"
+  }, 
+
+
+// fin de pulseras
   {
     title: "Protector De Teclado 12 - 14 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Morado",
