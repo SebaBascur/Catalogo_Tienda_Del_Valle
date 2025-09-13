@@ -28,7 +28,7 @@ const products = [
   },
   //4
     {
-    title: "Parlante Portátil Soundlink Flex 2da generación Color: Negro",
+    title: "Parlante Portátil Soundlink Flex 2da generación Color: Negro.",
     desc: "Parlante portátil Soundlink Flex 2ª generación con sonido potente y diseño resistente.",
     price: "$145.990",
     originalPrice: "$189.990",
