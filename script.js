@@ -62,6 +62,14 @@ const products = [
   },
   // 6
   {
+    title: "Bolso Estuche Rígido Para Nintendo Switch 2",
+    desc: "Protege tu Nintendo Switch 2 con este resistente y ligero bolso de viaje, diseñado para ofrecer seguridad, comodidad y estilo, ideal para transportar tu consola a donde quieras.",
+    price: "$23.380",
+    // originalPrice: "$14.990",
+    img: "bolsomario Switch2.png",
+    stock: "Disponible"
+  },
+  {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera. color: Agua",
     price: "$10.480",
@@ -95,6 +103,15 @@ const products = [
     img: "pen negro.png",
     stock: "No disponible"
   },
+  {
+    title: "Bolso Estuche Rígido Para Nintendo Switch 2",
+    desc: "Protege tu Nintendo Switch 2 con este resistente y ligero bolso de viaje, diseñado para ofrecer seguridad, comodidad y estilo, ideal para transportar tu consola a donde quieras.",
+    price: "$6.980",
+    // originalPrice: "$9.990",
+    img: "D_NQ_NP_2X_925702-MLC91283729848_092025-F-protector-de-teclado-12-14-y-15-17-pulgadas.webp",
+    stock: "Disponible"
+  },
+
   // Inicio Pulseras
   // aZul
   {
