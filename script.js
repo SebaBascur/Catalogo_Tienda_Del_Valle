@@ -167,7 +167,7 @@ const products = [
     desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Azul Oscuro",
     price: "$15.780",
     // originalPrice: "$19.990",
-    img: "azul 44.png",
+    img: "AZULV2.jpeg",
     stock: "No disponible"
   },
   //15
