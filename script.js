@@ -32,7 +32,7 @@ const products = [
     desc: "Parlante portátil Soundlink Flex 2ª generación con sonido potente y diseño resistente.",
     price: "$145.990",
     originalPrice: "$189.990",
-    img: "bose.jpeg",
+    img: "boseNegro.png",
     stock: "Disponible"
   },
   {
