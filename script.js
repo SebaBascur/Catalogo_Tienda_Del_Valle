@@ -35,8 +35,8 @@ const products = [
   },
   // 3,1
   {
-    title: "Bolso Tablet",
-    desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\" Color: Rosa",
+    title: "Bolso Tablet Color: Rosa",
+    desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\"",
     price: "$20.990",
     originalPrice: "$22.990",
     img: "bolso rosa tablet.webp",
@@ -70,16 +70,16 @@ const products = [
     stock: "Disponible"
   },
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7",
-    desc: "Funda silicona premium, protege, cómoda, segura, duradera. color: Agua",
+    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Agua",
+    desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
     // originalPrice: "$14.990",
     img: "penv2.png",
     stock: "Disponible"
   }, 
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7",
-    desc: "Funda silicona premium, protege, cómoda, segura, duradera. color: Verde",
+    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Verde",
+    desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
     // originalPrice: "$14.990",
     img: "pen verde .png",
@@ -87,8 +87,8 @@ const products = [
   },
   // 7 
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7",
-    desc: "Funda silicona premium, protege, cómoda, segura, duradera. color: Rosa",
+    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Rosa",
+    desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
     // originalPrice: "$14.990",
     img: "Diseño sin título.jpg",
@@ -96,8 +96,8 @@ const products = [
   },
   // 8
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7",
-    desc: "Funda silicona premium, protege, cómoda, segura, duradera. color: Negro",
+    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Negro",
+    desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.990",
     // originalPrice: "$14.990",
     img: "pen negro.png",
@@ -115,8 +115,8 @@ const products = [
   // Inicio Pulseras
   // aZul
   {
-    title: "Correa Para Galaxy Watch 8 40mm - Reloj Pulsera",
-    desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Azul Oscuro",
+    title: "Correa Para Galaxy Watch 8 40mm - Reloj Pulsera Color: Azul Oscuro",
+    desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante.",
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "Swazul.webp",
