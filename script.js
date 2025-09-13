@@ -463,6 +463,13 @@ document.addEventListener("DOMContentLoaded", () => {
     buildCatalog(filtered);
   });
 
+  // Cerrar la modal al hacer click en el fondo, pero NO al hacer click en el contenido
+  document.getElementById("modal").addEventListener("click", function(e) {
+    if (e.target === this) {
+      this.style.display = "none";
+    }
+  });
+
   document.getElementById("closeBtn").onclick = () => {
     document.getElementById("modal").style.display = "none";
   };
