@@ -8,14 +8,16 @@ const products = [
     img: "Magic Keyboard (USB-C) - Español (América Latina).jpeg",
     stock: "Disponible"
   },
+  // 2
   {
     title: "Apple Pencil Usb C",
-    desc: "iPad Pro de 13 pulgadas (M4), iPad Pro de 12.9 pulgadas (6.ª generación), iPad Pro de 12.9 pulgadas (5.ª generación). Compra antes de las 13:00 hrs, llega el mismo día",
+    desc: "iPad Pro de 13 pulgadas (M4), iPad Pro de 12.9 pulgadas (6.ª generación), iPad Pro de 12.9 pulgadas (5.ª generación).",
     price: "$124.990",
     originalPrice: "$137.990",
     img: "tagclappenuc00_370_other_1.webp",
     stock: "Disponible"
   },
+  // 3
   {
     title: "AirTag Apple",
     desc: "Úsalo en llaves, mochila u objetos personales y localízalos con la app Encontrar en tu iPhone.",
@@ -24,7 +26,7 @@ const products = [
     img: "airtag-double-select-202104.jpeg",
     stock: "Disponible"
   },
-
+  //4
   {
     title: "Bolso Tablet Color: Negro",
     desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\" ",
@@ -33,7 +35,7 @@ const products = [
     img: "D_NQ_NP_2X_688724-MLC90845939478_082025-F-bolso-para-samsung-galaxy-tab-o-ipad-ambos-de-11-pulgadas.webp",
     stock: "Disponible"
   },
-  // 3,1
+  // 5
   {
     title: "Bolso Tablet Color: Rosa",
     desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\"",
@@ -42,7 +44,7 @@ const products = [
     img: "bolso rosa tablet.webp",
     stock: "Disponible"
   },
-  // 4
+  // 6
   {
     title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Negro",
     desc: "Funda silicona liviana, resistente, soporte plegable, elegante.",
@@ -51,7 +53,7 @@ const products = [
     img: "D_NQ_NP_2X_705437-MLC90843957066_082025-F-funda-samsung-galaxy-tab-s9-fe-s10-fe-tapa-magnetica-silicon.webp",
     stock: "Disponible"
   },
-  // 5
+  // 7
   {
     title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Rosa",
     desc: "Funda silicona liviana, resistente, soporte plegable, elegante.",
@@ -60,7 +62,7 @@ const products = [
     img: "D_NQ_2X_737383-MLA90844235628_082025-B.webp",
     stock: "No disponible"
   },
-  // 6
+  // 8
   {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2",
     desc: "Protege tu Nintendo Switch 2 con este resistente y ligero bolso de viaje, diseñado para ofrecer seguridad, comodidad y estilo, ideal para transportar tu consola a donde quieras.",
@@ -69,6 +71,7 @@ const products = [
     img: "bolsomario Switch2.png",
     stock: "Disponible"
   },
+  //9
   {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Agua",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
@@ -76,7 +79,8 @@ const products = [
     // originalPrice: "$14.990",
     img: "penv2.png",
     stock: "Disponible"
-  }, 
+  },
+  //10
   {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Verde",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
@@ -85,7 +89,7 @@ const products = [
     img: "pen verde .png",
     stock: "Disponible"
   },
-  // 7 
+  // 11 
   {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Rosa",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
@@ -94,7 +98,7 @@ const products = [
     img: "Diseño sin título.jpg",
     stock: "No disponible"
   },
-  // 8
+  // 12
   {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Negro",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
@@ -103,7 +107,7 @@ const products = [
     img: "pen negro.png",
     stock: "No disponible"
   },
-
+//13
   // Inicio Pulseras
   // aZul
   {
@@ -114,6 +118,7 @@ const products = [
     img: "Swazul.webp",
     stock: "Disponible"
   },
+  //14
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
     desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Azul Oscuro",
@@ -122,6 +127,7 @@ const products = [
     img: "azul 44.png",
     stock: "No disponible"
   },
+  //15
   // Azul Claro 
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
@@ -131,6 +137,7 @@ const products = [
     img: "azul claro.png",
     stock: "No disponible"
   }, 
+  //16
   // Rosa claro
   {
     title: "Correa Para Galaxy Watch 8 40mm - Reloj Pulsera",
@@ -140,6 +147,7 @@ const products = [
     img: "rosa claro.png",
     stock: "Disponible"
   },
+  //17
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
     desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Rosa Claro",
@@ -148,6 +156,7 @@ const products = [
     img: "rosa claro.png",
     stock: "Disponible"
   }, 
+  //18
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
     desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Lavanda",
@@ -156,6 +165,7 @@ const products = [
     img: "lavanda_Morado.png",
     stock: "Disponible"
   },
+  //19
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
     desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Verde musgo",
@@ -164,6 +174,7 @@ const products = [
     img: "verde.png",
     stock: "Disponible"
   },  
+  //20
   {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Rosa",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
@@ -172,7 +183,7 @@ const products = [
     img: "rosaBuds.png",
     stock: "Disponible"
   }, 
-
+//21
   {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Gris",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
@@ -180,16 +191,18 @@ const products = [
     // originalPrice: "$19.990",
     img: "grisBuds.png",
     stock: "Disponible"
-  }, 
-    {
+  },
+//22 
+  {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Verde",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
     price: "$8.980",
     // originalPrice: "$19.990",
     img: "verdeBuds.png",
     stock: "Disponible"
-  }, 
-    {
+  },
+//23 
+  {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Negro",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
     price: "$8.980",
@@ -198,7 +211,7 @@ const products = [
     stock: "Disponible"
   }, 
 
-
+//24
 // fin de pulseras
   {
     title: "Protector De Teclado 12 - 14 Pulgadas",
@@ -208,6 +221,7 @@ const products = [
     img: "D_NQ_NP_2X_925702-MLC91283729848_092025-F-protector-de-teclado-12-14-y-15-17-pulgadas.webp",
     stock: "Disponible"
   },
+  //25
   {
     title: "Protector De Teclado 12 - 14 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Azul",
@@ -216,6 +230,7 @@ const products = [
     img: "azul protector de teclado.webp",
     stock: "Disponible"
   },
+  //26
   {
     title: "Protector De Teclado 12 - 14 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Transparente ",
@@ -224,7 +239,7 @@ const products = [
     img: "transparente protector de teclado.webp",
     stock: "Disponible"
   },
-  
+  //27
   {
     title: "Protector De Teclado 12 - 14 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Rosa Claro",
@@ -233,7 +248,7 @@ const products = [
     img: "rosa claro.jpeg",
     stock: "Disponible"
   },
-
+//28
   // 15 - 17 Pulgadas
   {
     title: "Protector De Teclado 15 - 17 Pulgadas",
@@ -243,6 +258,7 @@ const products = [
     img: "azul protector de teclado.webp",
     stock: "Disponible"
   },
+  //29
   {
     title: "Protector De Teclado 15 - 17 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Transparente ",
@@ -251,6 +267,7 @@ const products = [
     img: "transparente protector de teclado.webp",
     stock: "Disponible"
   },
+  //30
   {
     title: "Protector De Teclado 15 - 17 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Rosa Claro",
