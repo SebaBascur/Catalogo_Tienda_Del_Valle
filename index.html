@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Catálogo Tienda Del Valle</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1 class="logo">Tienda <span class="highlight">Del Valle</span></h1>
-    <h2>Despacho gratis en Santiago. Resto de Chile: envío por pagar vía empresa a convenir</h2>
+    <h1 class="logo">
+      Tienda <span class="highlight">Del Valle</span>
+    </h1>
+    <h2>
+      Despacho gratis en Santiago. Resto de Chile: envío por pagar vía
+      empresa a convenir
+    </h2>
     <div class="search-container">
-      <input type="text" id="searchInput" placeholder="Buscar producto, modelo o color..." />
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Buscar producto, modelo o color..."
+      />
     </div>
   </header>
   <main>
-    <div class="product-grid">
-      <!-- Productos generados dinámicamente -->
-    </div>
+    <div class="product-grid"></div>
   </main>
+
+  <!-- Modal principal -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span id="closeBtn" class="close">&times;</span>
-      <img id="modalImg" src="" alt="" />
+      <img id="modalImg" src="" alt="" style="cursor: zoom-in;" />
       <h2 id="modalTitle"></h2>
       <p id="modalDesc"></p>
       <p id="modalPrice"></p>
+
+      <!-- Contador de cantidad -->
+      <div class="quantity-section">
+        <div class="quantity-label">Cantidad</div>
+        <div class="quantity-controls">
+          <button id="decrementBtn" class="quantity-btn">−</button>
+          <span id="quantityNumber" class="quantity-number">1</span>
+          <button id="incrementBtn" class="quantity-btn">+</button>
+        </div>
+      </div>
+
       <button id="modalBuyBtn" class="buy-btn">Comprar</button>
       <div id="modalStock" class="product-stock"></div>
     </div>
   </div>
+
+  <!-- Overlay para imagen ampliada -->
+  <div id="imageOverlay" class="image-overlay" style="display:none;">
+    <img id="enlargedImg" src="" alt="Imagen ampliada" />
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

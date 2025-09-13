@@ -331,85 +331,47 @@ const products = [
 ];
 
 // Renderizado de productos (soporta búsqueda)
+let currentQuantity = 1;
+
 function buildCatalog(filteredProducts = products) {
   const grid = document.querySelector(".product-grid");
   grid.innerHTML = "";
-  filteredProducts.forEach((p, idx) => {
+  filteredProducts.forEach((p) => {
     const card = document.createElement("div");
     card.className = "product-card";
-    let priceHTML = '';
-    if (p.originalPrice) {
+
+    let priceHTML = "";
+    if (p.hasOwnProperty("originalPrice")) {
+      // Muestra el más bajo (oferta) tachado, el anterior en rojo destacado
       priceHTML = `
         <div class="price-container">
-          <div class="original-price">${p.originalPrice}</div>
-          <div class="sale-price">${p.price}</div>
+          <div class="original-price">${p.price}</div>
+          <div class="sale-price">${p.originalPrice}</div>
         </div>
       `;
     } else {
       priceHTML = `<div class="product-price">${p.price}</div>`;
     }
+
     card.innerHTML = `
-      <img src="${p.img}" alt="${p.title}">
+      <img src="${p.img}" alt="${p.title}" />
       <div class="product-title">${p.title}</div>
       <div class="product-desc">${p.desc}</div>
       ${priceHTML}
       <button class="buy-btn">Comprar</button>
-      <div class="product-stock ${p.stock && p.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}">${p.stock ? p.stock : ""}</div>
+      <div class="product-stock ${
+        p.stock && p.stock.toLowerCase().includes("no disponible")
+          ? "no-stock"
+          : "stock"
+      }">${p.stock || ""}</div>
     `;
+
     card.onclick = () => showModal(products.indexOf(p));
-    card.querySelector(".buy-btn").onclick = (event) => {
-      event.stopPropagation();
+    card.querySelector(".buy-btn").onclick = (e) => {
+      e.stopPropagation();
       showModal(products.indexOf(p));
     };
-    grid.appendChild(card);
-  });
-}
-buildCatalog();
 
-// Buscador en tiempo real
-document.getElementById("searchInput").addEventListener("input", function() {
-  const query = this.value.trim().toLowerCase();
-  if (!query) {
-    buildCatalog();
-    return;
-  }
-  const filtered = products.filter(p =>
-    (p.title && p.title.toLowerCase().includes(query)) ||
-    (p.desc && p.desc.toLowerCase().includes(query))
-  );
-  buildCatalog(filtered);
-});
-
-function buildCatalog(filteredProducts = products) {
-  const grid = document.querySelector(".product-grid");
-  grid.innerHTML = "";
-  filteredProducts.forEach((p, idx) => {
-    const card = document.createElement("div");
-    card.className = "product-card";
-    let priceHTML = '';
-    if (p.originalPrice) {
-      priceHTML = `
-        <div class="price-container">
-          <div class="original-price">${p.originalPrice}</div>
-          <div class="sale-price">${p.price}</div>
-        </div>
-      `;
-    } else {
-      priceHTML = `<div class="product-price">${p.price}</div>`;
-    }
-    card.innerHTML = `
-      <img src="${p.img}" alt="${p.title}">
-      <div class="product-title">${p.title}</div>
-      <div class="product-desc">${p.desc}</div>
-      ${priceHTML}
-      <button class="buy-btn">Comprar</button>
-      <div class="product-stock ${p.stock && p.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}">${p.stock ? p.stock : ""}</div>
-    `;
-    card.onclick = () => showModal(products.indexOf(p));
-    card.querySelector(".buy-btn").onclick = (event) => {
-      event.stopPropagation();
-      showModal(products.indexOf(p));
-    };
     grid.appendChild(card);
   });
 }
@@ -417,52 +379,91 @@ function buildCatalog(filteredProducts = products) {
 function showModal(idx) {
   const prod = products[idx];
   const modal = document.getElementById("modal");
+  const imageOverlay = document.getElementById("imageOverlay");
+  const enlargedImg = document.getElementById("enlargedImg");
+  const modalImg = document.getElementById("modalImg");
+
   modal.style.display = "flex";
   document.getElementById("modalImg").src = prod.img;
   document.getElementById("modalTitle").textContent = prod.title;
   document.getElementById("modalDesc").textContent = prod.desc;
+
+  // Igual que en catálogo: oferta tachado, anterior rojo
   const modalPriceContainer = document.getElementById("modalPrice");
-  if (prod.originalPrice) {
+  if (prod.hasOwnProperty("originalPrice")) {
     modalPriceContainer.innerHTML = `
-      <div class="original-price">${prod.originalPrice}</div>
-      <div class="sale-price">${prod.price}</div>
-    `;
+        <div class="original-price">${prod.price}</div>
+        <div class="sale-price">${prod.originalPrice}</div>
+      `;
   } else {
     modalPriceContainer.textContent = prod.price;
   }
+
   const stockElem = document.getElementById("modalStock");
-  stockElem.textContent = prod.stock ? prod.stock : "";
-  stockElem.className = `product-stock ${prod.stock && prod.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}`;
-  document.getElementById("modalBuyBtn").onclick = function () {
-    buyProduct(idx);
+  stockElem.textContent = prod.stock || "";
+  stockElem.className = `product-stock ${
+    prod.stock && prod.stock.toLowerCase().includes("no disponible")
+      ? "no-stock"
+      : "stock"
+  }`;
+
+  currentQuantity = 1;
+  document.getElementById("quantityNumber").textContent = currentQuantity;
+
+  document.getElementById("decrementBtn").onclick = () => {
+    if (currentQuantity > 1) {
+      currentQuantity--;
+      document.getElementById("quantityNumber").textContent = currentQuantity;
+    }
+  };
+
+  document.getElementById("incrementBtn").onclick = () => {
+    currentQuantity++;
+    document.getElementById("quantityNumber").textContent = currentQuantity;
+  };
+
+  document.getElementById("modalBuyBtn").onclick = () => {
+    buyProduct(idx, currentQuantity);
+  };
+
+  modalImg.onclick = () => {
+    enlargedImg.src = modalImg.src;
+    imageOverlay.style.display = "flex";
+  };
+
+  imageOverlay.onclick = () => {
+    imageOverlay.style.display = "none";
   };
 }
 
-const wsapNumber = "56954354068";
-function buyProduct(idx) {
+const wsapNumber = "56954368"; // Cambia por tu número real
+
+function buyProduct(idx, qty) {
   const prod = products[idx];
-  const waMsg = `Hola quiero comprar el ${prod.title}. Saludos`;
+  const waMsg = `Hola, quiero comprar ${qty} unidad${qty > 1 ? "es" : ""} de "${
+    prod.title
+  }". Saludos`;
   window.open(`https://wa.me/${wsapNumber}?text=${encodeURIComponent(waMsg)}`);
 }
 
-// Espera que el DOM esté listo antes de asignar eventos
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
   buildCatalog();
 
-  document.getElementById("searchInput").addEventListener("input", function() {
-    const query = this.value.trim().toLowerCase();
+  document.getElementById("searchInput").addEventListener("input", (e) => {
+    const query = e.target.value.toLowerCase().trim();
     if (!query) {
       buildCatalog();
       return;
     }
-    const filtered = products.filter(p =>
-      (p.title && p.title.toLowerCase().includes(query)) ||
-      (p.desc && p.desc.toLowerCase().includes(query))
+    const filtered = products.filter(
+      (p) =>
+        p.title.toLowerCase().includes(query) ||
+        (p.desc && p.desc.toLowerCase().includes(query))
     );
     buildCatalog(filtered);
   });
 
-  document.getElementById("closeBtn").onclick = function () {
+  document.getElementById("closeBtn").onclick = () => {
     document.getElementById("modal").style.display = "none";
   };
 });
