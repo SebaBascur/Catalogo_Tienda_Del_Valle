@@ -57,6 +57,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 0.4rem;
   letter-spacing: 0.5px;
+  text-wrap: balance;
 }
 
 .product-desc {

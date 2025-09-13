@@ -1,7 +1,7 @@
 const products = [
   // 1
   {
-    title: "Magic Keyboard (USB-C) - Español (América Latina)",
+    title: "Magic Keyboard (USB-C) Apple Español (América Latina)",
     desc: "El Magic Keyboard permite escribir con mayor comodidad y precisión.",
     price: "$149.990",
     originalPrice: "$201.990",
@@ -17,7 +17,7 @@ const products = [
     stock: "Disponible"
   },
   {
-    title: "AirTag",
+    title: "AirTag Apple",
     desc: "Úsalo en llaves, mochila u objetos personales y localízalos con la app Encontrar en tu iPhone.",
     price: "$36.990",
     originalPrice: "$40.990",
@@ -44,8 +44,8 @@ const products = [
   },
   // 4
   {
-    title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon",
-    desc: "Funda silicona liviana, resistente, soporte plegable, elegante. color: negro",
+    title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Negro",
+    desc: "Funda silicona liviana, resistente, soporte plegable, elegante.",
     price: "$19.990",
     // originalPrice: "$24.990",
     img: "D_NQ_NP_2X_705437-MLC90843957066_082025-F-funda-samsung-galaxy-tab-s9-fe-s10-fe-tapa-magnetica-silicon.webp",
@@ -53,8 +53,8 @@ const products = [
   },
   // 5
   {
-    title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon",
-    desc: "Funda silicona liviana, resistente, soporte plegable, elegante. color: Rosa",
+    title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Rosa",
+    desc: "Funda silicona liviana, resistente, soporte plegable, elegante.",
     price: "$19.990",
     // originalPrice: "$24.990",
     img: "D_NQ_2X_737383-MLA90844235628_082025-B.webp",
