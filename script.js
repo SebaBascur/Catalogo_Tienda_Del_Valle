@@ -85,7 +85,7 @@ const products = [
     price: "$23.380",
     // originalPrice: "$14.990",
     img: "bolsomario Switch2.png",
-    stock: "Disponible"
+    stock: "No disponible"
   },
   //9
   {
