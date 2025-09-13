@@ -27,6 +27,14 @@ const products = [
     stock: "Disponible"
   },
   //4
+    {
+    title: "Parlante Portátil Soundlink Flex 2da generación Color: Negro",
+    desc: "Parlante portátil Soundlink Flex 2ª generación con sonido potente y diseño resistente.",
+    price: "$145.990",
+    originalPrice: "$189.990",
+    img: "Parlante portátil Soundlink Flex 2ª generación con sonido potente y diseño resistente.png",
+    stock: "Disponible"
+  },
   {
     title: "Bolso Tablet Color: Negro",
     desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\" ",
