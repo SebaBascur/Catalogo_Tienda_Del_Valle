@@ -63,6 +63,14 @@ const products = [
     stock: "No disponible"
   },
   // 8
+    {
+    title: "Protectores De Silicona Joycon Switch 2 Color: Azul Y Rojo",
+    desc: "Este producto es un kit de fundas de silicona diseñada especialmente para los controles Joy-Con del Nintendo Switch 2.",
+    price: "$23.380",
+    // originalPrice: "$14.990",
+    img: "Protectores De Silicona Joycon Switch 2.png",
+    stock: "No disponible"
+  },
   {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2",
     desc: "Protege tu Nintendo Switch 2 con este resistente y ligero bolso de viaje, diseñado para ofrecer seguridad, comodidad y estilo, ideal para transportar tu consola a donde quieras.",
@@ -73,6 +81,32 @@ const products = [
   },
   //9
   {
+    title: "Bolso Estuche Rígido Para Nintendo Switch 2 Color: Rojo",
+    desc: "Funda protectora para Nintendo Switch 2, diseñada a medida para un ajuste seguro y perfecto de la consola y accesorios.",
+    price: "24.990",
+    // originalPrice: "$14.990",
+    img: "1.png",
+    stock: "No disponible"
+  },
+    {
+    title: "Bolso Estuche Rígido Para Nintendo Switch 2 Color: Negro",
+    desc: "Funda protectora para Nintendo Switch 2, diseñada a medida para un ajuste seguro y perfecto de la consola y accesorios.",
+    price: "24.990",
+    // originalPrice: "$14.990",
+    img: "2.png",
+    stock: "No disponible"
+  },
+  {
+    title: "Ventilador Enfriador Ps5 Usb Silencioso",
+    desc: "Soporte vertical para PS5 con triple ventilador y puerto USB que enfría la consola y la mantiene estable.",
+    price: "24.990",
+    // originalPrice: "$14.990",
+    img: "Ventilador Enfriador Ps5 Usb Silencioso.png",
+    stock: "No disponible"
+  },
+
+  
+  {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Agua",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
@@ -80,6 +114,7 @@ const products = [
     img: "penv2.png",
     stock: "Disponible"
   },
+  
   //10
   {
     title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Verde",
@@ -287,13 +322,13 @@ const products = [
   }
 ];
 
-function buildCatalog() {
+// Renderizado de productos (soporta búsqueda)
+function buildCatalog(filteredProducts = products) {
   const grid = document.querySelector(".product-grid");
-  products.forEach((p, idx) => {
+  grid.innerHTML = "";
+  filteredProducts.forEach((p, idx) => {
     const card = document.createElement("div");
     card.className = "product-card";
-    
-    // Generar HTML de precios
     let priceHTML = '';
     if (p.originalPrice) {
       priceHTML = `
@@ -305,7 +340,6 @@ function buildCatalog() {
     } else {
       priceHTML = `<div class="product-price">${p.price}</div>`;
     }
-    
     card.innerHTML = `
       <img src="${p.img}" alt="${p.title}">
       <div class="product-title">${p.title}</div>
@@ -314,15 +348,29 @@ function buildCatalog() {
       <button class="buy-btn">Comprar</button>
       <div class="product-stock ${p.stock && p.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}">${p.stock ? p.stock : ""}</div>
     `;
-    card.onclick = () => showModal(idx);
+    card.onclick = () => showModal(products.indexOf(p));
     card.querySelector(".buy-btn").onclick = (event) => {
       event.stopPropagation();
-      showModal(idx);
+      showModal(products.indexOf(p));
     };
     grid.appendChild(card);
   });
 }
 buildCatalog();
+
+// Buscador en tiempo real
+document.getElementById("searchInput").addEventListener("input", function() {
+  const query = this.value.trim().toLowerCase();
+  if (!query) {
+    buildCatalog();
+    return;
+  }
+  const filtered = products.filter(p =>
+    (p.title && p.title.toLowerCase().includes(query)) ||
+    (p.desc && p.desc.toLowerCase().includes(query))
+  );
+  buildCatalog(filtered);
+});
 
 function showModal(idx) {
   const prod = products[idx];
@@ -331,8 +379,8 @@ function showModal(idx) {
   document.getElementById("modalImg").src = prod.img;
   document.getElementById("modalTitle").textContent = prod.title;
   document.getElementById("modalDesc").textContent = prod.desc;
-  
-  // Generar precios en modal
+
+  // Precios en modal
   const modalPriceContainer = document.getElementById("modalPrice");
   if (prod.originalPrice) {
     modalPriceContainer.innerHTML = `
@@ -342,22 +390,11 @@ function showModal(idx) {
   } else {
     modalPriceContainer.textContent = prod.price;
   }
-  
+
   const stockElem = document.getElementById("modalStock");
   stockElem.textContent = prod.stock ? prod.stock : "";
   stockElem.className = `product-stock ${prod.stock && prod.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}`;
   document.getElementById("modalBuyBtn").onclick = function () {
     buyProduct(idx);
   };
-}
-
-document.getElementById("closeBtn").onclick = function () {
-  document.getElementById("modal").style.display = "none";
-};
-
-const wsapNumber = "56954354068";
-function buyProduct(idx) {
-  const prod = products[idx];
-  const waMsg = `Hola quiero comprar el ${prod.title}. Saludos`;
-  window.open(`https://wa.me/${wsapNumber}?text=${encodeURIComponent(waMsg)}`);
 }
