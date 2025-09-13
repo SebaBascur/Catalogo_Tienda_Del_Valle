@@ -380,6 +380,40 @@ document.getElementById("searchInput").addEventListener("input", function() {
   buildCatalog(filtered);
 });
 
+function buildCatalog(filteredProducts = products) {
+  const grid = document.querySelector(".product-grid");
+  grid.innerHTML = "";
+  filteredProducts.forEach((p, idx) => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+    let priceHTML = '';
+    if (p.originalPrice) {
+      priceHTML = `
+        <div class="price-container">
+          <div class="original-price">${p.originalPrice}</div>
+          <div class="sale-price">${p.price}</div>
+        </div>
+      `;
+    } else {
+      priceHTML = `<div class="product-price">${p.price}</div>`;
+    }
+    card.innerHTML = `
+      <img src="${p.img}" alt="${p.title}">
+      <div class="product-title">${p.title}</div>
+      <div class="product-desc">${p.desc}</div>
+      ${priceHTML}
+      <button class="buy-btn">Comprar</button>
+      <div class="product-stock ${p.stock && p.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}">${p.stock ? p.stock : ""}</div>
+    `;
+    card.onclick = () => showModal(products.indexOf(p));
+    card.querySelector(".buy-btn").onclick = (event) => {
+      event.stopPropagation();
+      showModal(products.indexOf(p));
+    };
+    grid.appendChild(card);
+  });
+}
+
 function showModal(idx) {
   const prod = products[idx];
   const modal = document.getElementById("modal");
@@ -387,8 +421,6 @@ function showModal(idx) {
   document.getElementById("modalImg").src = prod.img;
   document.getElementById("modalTitle").textContent = prod.title;
   document.getElementById("modalDesc").textContent = prod.desc;
-
-  // Precios en modal
   const modalPriceContainer = document.getElementById("modalPrice");
   if (prod.originalPrice) {
     modalPriceContainer.innerHTML = `
@@ -398,7 +430,6 @@ function showModal(idx) {
   } else {
     modalPriceContainer.textContent = prod.price;
   }
-
   const stockElem = document.getElementById("modalStock");
   stockElem.textContent = prod.stock ? prod.stock : "";
   stockElem.className = `product-stock ${prod.stock && prod.stock.toLowerCase().includes("no disponible") ? "no-stock" : "stock"}`;
@@ -406,3 +437,32 @@ function showModal(idx) {
     buyProduct(idx);
   };
 }
+
+const wsapNumber = "56954354068";
+function buyProduct(idx) {
+  const prod = products[idx];
+  const waMsg = `Hola quiero comprar el ${prod.title}. Saludos`;
+  window.open(`https://wa.me/${wsapNumber}?text=${encodeURIComponent(waMsg)}`);
+}
+
+// Espera que el DOM esté listo antes de asignar eventos
+document.addEventListener("DOMContentLoaded", function() {
+  buildCatalog();
+
+  document.getElementById("searchInput").addEventListener("input", function() {
+    const query = this.value.trim().toLowerCase();
+    if (!query) {
+      buildCatalog();
+      return;
+    }
+    const filtered = products.filter(p =>
+      (p.title && p.title.toLowerCase().includes(query)) ||
+      (p.desc && p.desc.toLowerCase().includes(query))
+    );
+    buildCatalog(filtered);
+  });
+
+  document.getElementById("closeBtn").onclick = function () {
+    document.getElementById("modal").style.display = "none";
+  };
+});
