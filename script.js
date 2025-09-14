@@ -3,8 +3,8 @@ const products = [
   {
     title: "Magic Keyboard (USB-C) Apple Español (América Latina)",
     desc: "El Magic Keyboard permite escribir con mayor comodidad y precisión.",
-    price: "$149.990",
-    originalPrice: "$201.990",
+    price: "$201.990",
+    originalPrice: "$149.990" ,
     img: "Magic Keyboard (USB-C) - Español (América Latina).jpeg",
     stock: "Disponible"
   },
