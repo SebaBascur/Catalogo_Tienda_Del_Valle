@@ -27,7 +27,15 @@ const products = [
     stock: "Disponible"
   },
   //4
-    {
+  {
+    title: "Cargador USB-C 20w Apple",
+    desc: "Carga rápida y eficiente que tu iPhone o iPad merece con el Adaptador de Corriente USB-C de 20W de Apple.",
+    price: "24.990",
+    originalPrice: "26.990",
+    img: "1cargador-apple.png",
+    stock: "Disponible"
+  },
+  {
     title: "Parlante Portátil Soundlink Flex 2da generación Color: Negro.",
     desc: "Parlante portátil Soundlink Flex 2ª generación con sonido potente y diseño resistente.",
     price: "$189.990",
@@ -75,7 +83,7 @@ const products = [
     {
     title: "Protectores De Silicona Joycon Switch 2 Color: Azul Y Rojo",
     desc: "Este producto es un kit de fundas de silicona diseñada especialmente para los controles Joy-Con del Nintendo Switch 2.",
-    price: "$23.380",
+    price: "$9.990",
     // originalPrice: "$14.990",
     img: "Protectores De Silicona Joycon Switch 2.png",
     stock: "No disponible"
