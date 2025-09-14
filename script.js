@@ -21,8 +21,8 @@ const products = [
   {
     title: "AirTag Apple",
     desc: "Úsalo en llaves, mochila u objetos personales y localízalos con la app Encontrar en tu iPhone.",
-    price: "$36.990",
-    originalPrice: "$40.990",
+    price: "$40.990",
+    originalPrice: "36.990",
     img: "airtag-double-select-202104.jpeg",
     stock: "Disponible"
   },
