@@ -48,8 +48,8 @@ const products = [
   {
     title: "Bolso Tablet Color: Rosa",
     desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\"",
-    price: "$20.990",
-    originalPrice: "$22.990",
+    price: "$22.990",
+    originalPrice: "$20.990",
     img: "bolso rosa tablet.webp",
     stock: "Disponible"
   },
