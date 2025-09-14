@@ -35,12 +35,13 @@ const products = [
     img: "boseNegro.png",
     stock: "Disponible"
   },
+  //5
   {
-    title: "Bolso Tablet Color: Negro",
-    desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\" ",
-    price: "$20.890",
-    originalPrice: "$22.990",
-    img: "D_NQ_NP_2X_688724-MLC90845939478_082025-F-bolso-para-samsung-galaxy-tab-o-ipad-ambos-de-11-pulgadas.webp",
+    title: "Auriculares Samsung Galaxy Buds Fe Blanco White",
+    desc: "Cambia de dispositivo fácilmente y mantén el sonido fluido entre smartphone, tablet y televisor Samsung Galaxy gracias a Auto Switch y Smart",
+    price: "$88.736",
+    originalPrice: "79.990",
+    img: "budsWhite.png",
     stock: "Disponible"
   },
   // 5
