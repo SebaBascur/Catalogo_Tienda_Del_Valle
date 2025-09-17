@@ -21,7 +21,9 @@ const products = [
   {
     title: "AirTag Apple",
     desc: "Úsalo en llaves, mochila u objetos personales y localízalos con la app Encontrar en tu iPhone.",
+    // PrecioAntiguo
     price: "$40.990",
+    // PrecioDeVenta
     originalPrice: "36.990",
     img: "airtag-double-select-202104.jpeg",
     stock: "Disponible"
@@ -219,12 +221,12 @@ const products = [
   },
   //19
   {
-    title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
-    desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Verde musgo",
+    title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera Color: Verde musgo",
+    desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante.",
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "verde.png",
-    stock: "Disponible"
+    stock: "No disponible"
   },  
   //20
   {
