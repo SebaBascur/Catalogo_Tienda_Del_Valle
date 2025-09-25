@@ -105,7 +105,7 @@ const products = [
     price: "24.990",
     // originalPrice: "$14.990",
     img: "1.png",
-    stock: "No disponible"
+    stock: "Disponible"
   },
     {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2 Color: Negro",
@@ -113,7 +113,7 @@ const products = [
     price: "24.990",
     // originalPrice: "$14.990",
     img: "2.png",
-    stock: "No disponible"
+    stock: "Disponible"
   },
   {
     title: "Ventilador Enfriador Ps5 Usb Silencioso",
