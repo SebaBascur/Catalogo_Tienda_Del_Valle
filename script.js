@@ -121,7 +121,7 @@ const products = [
     price: "24.990",
     // originalPrice: "$14.990",
     img: "Ventilador Enfriador Ps5 Usb Silencioso.png",
-    stock: "No disponible"
+    stock: "Disponible"
   },
 
   
