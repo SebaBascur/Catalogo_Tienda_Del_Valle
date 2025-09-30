@@ -6,7 +6,7 @@ const products = [
     price: "$201.990",
     originalPrice: "$149.990" ,
     img: "Magic Keyboard (USB-C) - Español (América Latina).jpeg",
-    stock: "Disponible"
+    stock: "No disponible"
   },
   // 2
   {
