@@ -90,6 +90,14 @@ const products = [
     stock: "Disponible"
   },
   
+      {
+    title: "Bateria Externa Xtorm 20000 Mah Negra",
+    desc: "Batería externa de alta capacidad con carga rápida y diseño compacto.",
+    price: "$27.990",
+    // originalPrice: "$24.990",
+    img: "w=800,h=800,fit=pad (1).jpeg",
+    stock: "Disponible"
+  },
   
   // 8
     {
