@@ -86,7 +86,7 @@ const products = [
     desc: "Batería externa de alta capacidad con carga rápida y diseño compacto.",
     price: "$27.990",
     // originalPrice: "$24.990",
-    img: "bateriaBlanca.png",
+    img: "w=800,h=800,fit=pad.webp",
     stock: "Disponible"
   },
   
