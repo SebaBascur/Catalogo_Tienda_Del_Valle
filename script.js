@@ -81,6 +81,16 @@ const products = [
     img: "D_NQ_2X_737383-MLA90844235628_082025-B.webp",
     stock: "No disponible"
   },
+    {
+    title: "Bateria Externa Xtorm 20000 Mah Blanco",
+    desc: "Batería externa de alta capacidad con carga rápida y diseño compacto.",
+    price: "$27.990",
+    // originalPrice: "$24.990",
+    img: "bateriaBlanca.png",
+    stock: "Disponible"
+  },
+  
+  
   // 8
     {
     title: "Protectores De Silicona Joycon Switch 2 Color: Azul Y Rojo",
@@ -107,7 +117,7 @@ const products = [
     img: "1.png",
     stock: "Disponible"
   },
-    {
+  {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2 Color: Negro",
     desc: "Funda protectora para Nintendo Switch 2, diseñada a medida para un ajuste seguro y perfecto de la consola y accesorios.",
     price: "24.990",
