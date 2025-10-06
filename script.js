@@ -79,7 +79,7 @@ const products = [
     price: "$19.990",
     // originalPrice: "$24.990",
     img: "D_NQ_2X_737383-MLA90844235628_082025-B.webp",
-    stock: "No disponible"
+    stock: "Disponible"
   },
     {
     title: "Bateria Externa Xtorm 20000 Mah Blanco",
@@ -106,7 +106,7 @@ const products = [
     price: "$9.990",
     // originalPrice: "$14.990",
     img: "Protectores De Silicona Joycon Switch 2.png",
-    stock: "No disponible"
+    stock: "Disponible"
   },
   {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2",
@@ -192,12 +192,12 @@ const products = [
   },
   //14
   {
-    title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
-    desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Azul Oscuro",
+    title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera Color: Azul Oscuro",
+    desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante.",
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "AZULV2.jpeg",
-    stock: "No disponible"
+    stock: "Disponible"
   },
   //15
   // Azul Claro 
@@ -207,7 +207,7 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "azul claro.png",
-    stock: "No disponible"
+    stock: "Disponible"
   }, 
   //16
   // Rosa claro
@@ -244,7 +244,7 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "verde.png",
-    stock: "No disponible"
+    stock: "Disponible"
   },  
   //20
   {
