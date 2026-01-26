@@ -38,7 +38,7 @@ const products = [
     stock: "Disponible"
   },
   {
-    title: "Parlante Portátil Soundlink Flex 2da generación Color: Negro.",
+    title: "Parlante Portátil Bose Soundlink Flex 2da generación Color: Negro.",
     desc: "Parlante portátil Soundlink Flex 2ª generación con sonido potente y diseño resistente.",
     price: "$189.990",
     originalPrice: "$145.990",
@@ -63,6 +63,17 @@ const products = [
     img: "bolso rosa tablet.webp",
     stock: "Disponible"
   },
+
+    {
+    title: "Bolso Tablet Color: Negro",
+    desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\"",
+    price: "$22.990",
+    originalPrice: "$20.990",
+    img: "bolso negro.webp",
+    stock: "Disponible"
+  },
+
+
   // 6
   {
     title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Negro",
@@ -81,12 +92,20 @@ const products = [
     img: "D_NQ_2X_737383-MLA90844235628_082025-B.webp",
     stock: "Disponible"
   },
-    {
+  {
+    title: "Hub Usb Ugreen Uno 7 En 1 Azul Oscuro",
+    desc: "Potencia tu laptop, tablet o consola con el UGREEN Uno USB-C HUB, un adaptador multifuncional diseñado para ofrecer velocidad, compatibilidad y estilo.",
+    price: "$64.990",
+    // originalPrice: "$24.990",
+    img: "D_NQ_NP_2X_804045-MLA93967788875_102025-F-hub-usb-ugreen-uno-7-en-1-azul-oscuro.webp",
+    stock: "Disponible"
+  },
+  {
     title: "Bateria Externa Xtorm 20000 Mah Blanco",
     desc: "Batería externa de alta capacidad con carga rápida y diseño compacto.",
     price: "$27.990",
     // originalPrice: "$24.990",
-    img: "w=800,h=800,fit=pad.webp",
+    img: "bateriaBlanca.webp",
     stock: "Disponible"
   },
   
@@ -114,7 +133,7 @@ const products = [
     price: "$23.380",
     // originalPrice: "$14.990",
     img: "bolsomario Switch2.png",
-    stock: "No disponible"
+    stock: "Disponible"
   },
   //9
   {

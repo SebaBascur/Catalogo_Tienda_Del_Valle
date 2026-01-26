@@ -7,14 +7,21 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
     <h1 class="logo">
       Tienda <span class="highlight">Del Valle</span>
     </h1>
     <h2>
-      Despacho gratis en Santiago (compra hasta las 15:00 hrs. y recibe hoy). Resto de Chile: envío por pagar vía
-      empresa a convenir
+      Despacho gratis en Santiago (compra hasta las 13:00 hrs. y recibe hoy).
+      Resto de Chile: envío por pagar vía empresa a convenir
     </h2>
+
+    <div class="ml-banner" style="text-align: center;">
+  ⭐ Somos vendedores activos en Mercado Libre Chile  
+  +X ventas | Reputación positiva | Compra con confianza
+</div>
+
     <div class="search-container">
       <input
         type="text"
@@ -23,6 +30,37 @@
       />
     </div>
   </header>
+
+  <!-- ✅ BANNER -->
+  <section
+    style="
+      max-width: 1100px;
+      margin: 0 auto 2.5rem auto;
+      padding: 1.4rem 1.8rem;
+      background: linear-gradient(90deg, #1976d2, #64b5f6);
+      border-radius: 22px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(25,118,210,0.25);
+    "
+  >
+    <h3 style="margin: 0 0 0.4rem 0; font-size: 1.6rem; font-weight: 700;">
+      🔥 Ofertas destacadas de la semana
+    </h3>
+    <p style="margin: 0; font-size: 1.05rem; opacity: 0.95;">
+      AirTag, Apple Pencil, teclados y accesorios seleccionados con stock limitado
+    </p>
+  </section>
+
+<!-- BLOQUE CONFIANZA MERCADO LIBRE -->
+<section class="ml-proof" style="width: 350px;">
+  <img
+    src="/Captura de pantalla 2026-01-23 a la(s) 12.36.34 a.m..png"
+    alt="Reputación Mercado Libre - Tienda del Valle"
+  />
+</section>
+
+  <!-- MAIN -->
   <main>
     <div class="product-grid"></div>
   </main>
@@ -36,7 +74,6 @@
       <p id="modalDesc"></p>
       <p id="modalPrice"></p>
 
-      <!-- Contador de cantidad -->
       <div class="quantity-section">
         <div class="quantity-label">Cantidad</div>
         <div class="quantity-controls">
@@ -51,7 +88,7 @@
     </div>
   </div>
 
-  <!-- Overlay para imagen ampliada -->
+  <!-- Overlay imagen -->
   <div id="imageOverlay" class="image-overlay" style="display:none;">
     <img id="enlargedImg" src="" alt="Imagen ampliada" />
   </div>

@@ -1,10 +1,11 @@
 body {
-  font-family: 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   background: #ffffff;
   margin: 0;
   color: #222;
 }
 
+/* LOGO */
 .logo {
   font-size: 2.1rem;
   font-weight: 700;
@@ -12,7 +13,6 @@ body {
   margin: 3rem 0 1.6rem 0;
   letter-spacing: 2px;
 }
-
 .logo .highlight {
   color: #1976d2;
   font-weight: 900;
@@ -23,12 +23,12 @@ h2 {
   text-align: center;
 }
 
+/* SEARCH */
 .search-container {
   display: flex;
   justify-content: center;
   margin: 1rem 0 2.2rem 0;
 }
-
 #searchInput {
   width: 100%;
   max-width: 460px;
@@ -44,6 +44,7 @@ h2 {
   border: 1.6px solid #1976d2;
 }
 
+/* GRID */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -51,321 +52,248 @@ h2 {
   padding: 1rem 8vw;
 }
 
+/* CARD */
 .product-card {
   background: #ffffff;
   border-radius: 30px;
-  box-shadow: 0 6px 48px 0px rgba(30,30,50,0.13);
+  box-shadow: 0 6px 48px rgba(30,30,50,0.13);
   padding: 1.1rem 1.2rem;
   text-align: center;
-  transition: box-shadow 0.28s;
+  transition: box-shadow 0.28s, transform 0.28s;
   cursor: pointer;
-  border: none;
-  outline: none;
 }
-
 .product-card:hover {
-  box-shadow: 0 14px 68px 2px rgba(30,30,50,0.28);
+  box-shadow: 0 14px 68px rgba(30,30,50,0.28);
+  transform: translateY(-4px);
 }
-
 .product-card img {
   width: 160px;
-  max-width: 100%;
   height: auto;
 }
 
+/* TEXT */
 .product-title {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
-  letter-spacing: 0.5px;
-  text-wrap: balance;
 }
-
 .product-desc {
   font-size: 1rem;
   color: #555;
   margin-bottom: 0.5rem;
   min-height: 38px;
 }
-
 .product-price {
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   color: #1976d2;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.buy-btn {
-  background: linear-gradient(90deg, #1976d2 65%, #64b5f6 100%);
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  padding: 0.70rem 2.1rem;
-  font-size: 1.045rem;
-  font-weight: 500;
-  box-shadow: 0 4px 20px rgba(31,120,211,0.10);
-  cursor: pointer;
-  transition: background 0.12s, filter 0.12s;
-  filter: drop-shadow(0 2px 12px rgba(31,120,211,0.07));
+/* PRICE OFFER */
+.price-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.original-price {
+  font-size: 1rem;
+  color: #888;
+  text-decoration: line-through;
+}
+.sale-price {
+  font-size: 1.25rem;
+  color: #e53935;
+  font-weight: 700;
 }
 
+/* BUTTON */
+.buy-btn {
+  background: linear-gradient(90deg, #1976d2 65%, #64b5f6);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 0.7rem 2.1rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
 .buy-btn:hover {
-  background: linear-gradient(90deg, #1565c0 80%, #1976d2 120%);
   filter: brightness(1.07);
 }
 
+/* STOCK */
+.product-stock {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.stock { color: #009688; }
+.no-stock { color: #e53935; font-weight: 700; }
+
+/* MODAL */
 .modal {
   display: none;
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   background: rgba(20,28,38,0.33);
   justify-content: center;
   align-items: center;
-  z-index: 900;
-  backdrop-filter: blur(1.5px);
+  z-index: 2000;
 }
-
 .modal-content {
-  background: #ffffff;
+  background: #fff;
   border-radius: 36px;
-  padding: 2.2rem 2rem 2rem 2rem;
-  position: relative;
+  padding: 2.2rem;
   max-width: 340px;
   width: 95vw;
   text-align: center;
-  box-shadow: 0 10px 90px 9px rgba(30,40,55,0.15);
   animation: modalZoomIn 0.26s cubic-bezier(0.59,0.07,0.45,1.01);
 }
-
 @keyframes modalZoomIn {
-  0% {
-    transform: scale(0.94);
-    opacity: 0.72;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(0.94); opacity: 0.7; }
+  to { transform: scale(1); opacity: 1; }
 }
-
 .close {
   position: absolute;
   right: 30px;
   top: 24px;
   font-size: 2rem;
-  font-weight: 700;
-  color: #555;
   cursor: pointer;
 }
-
 .modal-content img {
   width: 162px;
-  max-width: 100%;
-  height: auto;
   border-radius: 22px;
   margin-bottom: 1.3rem;
-  cursor: zoom-in;
 }
 
-.product-stock {
-  margin-top: 0.8rem;
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-.product-stock.stock {
-  color: #009688;
-}
-
-.product-stock.no-stock {
-  color: #e53935;
-  font-weight: 700;
-}
-
-/* ------ PRECIOS con tachado y rojo tanto en la grilla como la modal ------ */
-.price-container {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.price-container .original-price {
-  font-size: 1rem;
-  color: #888;
-  text-decoration: line-through;
-  margin-bottom: 0.3rem;
-  display: block;
-}
-
-.price-container .sale-price {
-  font-size: 1.25rem;
-  color: #e53935;
-  font-weight: 700;
-  display: block;
-}
-
-/* Para asegurar que los precios tengan el mismo estilo en la modal */
-#modalPrice .original-price {
-  font-size: 1rem;
-  color: #888;
-  text-decoration: line-through;
-  margin-bottom: 0.3rem;
-  display: block;
-}
-#modalPrice .sale-price {
-  font-size: 1.25rem;
-  color: #e53935;
-  font-weight: 700;
-  display: block;
-}
-
-/* ---------------------------------------- */
-
-.quantity-section {
-  margin: 1.2rem 0 0.7rem 0;
-  text-align: center;
-}
-
-.quantity-label {
-  font-size: 1.06rem;
-  font-weight: 500;
-  color: #1976d2;
-  margin-bottom: 0.3rem;
-}
-
+/* QUANTITY */
 .quantity-controls {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 18px;
-  background: #f5f7fa;
-  border-radius: 30px;
-  border: 1.2px solid #1976d2;
-  padding: 0.5rem 1.2rem;
-  margin: 0 auto;
-  width: fit-content;
+  justify-content: center;
+  margin: 1rem 0;
 }
-
 .quantity-btn {
   background: none;
   border: none;
   font-size: 1.45rem;
-  color: #1976d2;
   cursor: pointer;
-  padding: 0 0.2rem;
-  transition: color 0.14s;
 }
-
-.quantity-btn:hover {
-  color: #1565c0;
-}
-
 .quantity-number {
   font-size: 1.18rem;
   font-weight: 600;
-  width: 28px;
-  text-align: center;
-  display: inline-block;
-  background: #ededed;
-  border-radius: 8px;
 }
 
+/* IMAGE OVERLAY */
 .image-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.9);
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
   justify-content: center;
   align-items: center;
-  display: none;
-  z-index: 1000;
-  cursor: zoom-out;
+  z-index: 3000;
 }
-
 .image-overlay img {
-  width: auto;
   max-width: 90vw;
   max-height: 90vh;
   border-radius: 15px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
-  cursor: zoom-out;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 1200px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    padding: 1rem 6vw;
-  }
+  .product-grid { grid-template-columns: repeat(3,1fr); }
 }
-
 @media (max-width: 768px) {
-  .logo {
-    font-size: 1.8rem;
-    margin: 2rem 0 1.2rem 0;
-  }
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 1rem 4vw;
-  }
-  .modal-content {
-    max-width: 320px;
-    padding: 2rem 1.8rem;
-  }
-  .modal-content img {
-    width: 140px;
-  }
+  .product-grid { grid-template-columns: repeat(2,1fr); }
 }
-
 @media (max-width: 480px) {
-  .logo {
-    font-size: 1.6rem;
-    margin: 1.5rem 0 1rem 0;
-    letter-spacing: 1px;
-  }
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1rem 5vw;
-  }
-  .product-card {
-    margin: 0 auto 1rem auto;
-    max-width: 280px;
-  }
-  .modal-content {
-    max-width: 300px;
-    width: 90vw;
-    padding: 1.8rem 1.5rem;
-  }
-  .modal-content img {
-    width: 120px;
-  }
-  .close {
-    right: 20px;
-    top: 20px;
-    font-size: 1.8rem;
-  }
+  .product-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 360px) {
-  .logo {
-    font-size: 1.4rem;
-  }
-  .product-grid {
-    padding: 1rem 3vw;
-  }
-  .product-card {
-    max-width: 260px;
-  }
-  .modal-content {
-    max-width: 280px;
-    width: 90vw;
-  }
+
+
+/* ===== BLOQUE CONFIANZA MERCADO LIBRE ===== */
+
+.ml-trust-wrapper {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+.ml-trust-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+.ml-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.ml-subtitle {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.ml-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #00a650;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.ml-icon {
+  font-size: 1.1rem;
+}
+
+.ml-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.ml-metrics {
+  display: flex;
+  gap: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.ml-metric {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.ml-metric strong {
+  font-size: 1rem;
+  color: #000;
+}
+
+
+/* ===== BLOQUE CONFIANZA MERCADO LIBRE (IMAGEN REAL) ===== */
+
+.ml-proof {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ml-proof img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.12);
 }

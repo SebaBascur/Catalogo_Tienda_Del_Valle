@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Apple AirTag | Nunca vuelvas a perder tus cosas - Tienda del Valle</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0071e3",
+        "background-light": "#ffffff",
+        "background-dark": "#000000",
+        "gray-nav": "#f5f5f7",
+      },
+      fontFamily: {
+        display: ["Inter", "system-ui", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "12px",
+      },
+    },
+  },
+};
+</script>
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.apple-nav-item {
+  @apply text-xs font-normal opacity-80 hover:opacity-100 transition-opacity px-3;
+}
+</style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
+  <div class="max-w-[1024px] mx-auto flex items-center justify-between h-12 px-4 md:px-0">
+    <p class="font-medium">Tienda del Valle</p>
+
+    <div class="hidden md:flex items-center space-x-1">
+      <a class="apple-nav-item" href="/index.html">Inicio</a>
+      <a class="apple-nav-item" href="#">AirTag</a>
+      <a class="apple-nav-item" href="#">Accesorios</a>
+      <a class="apple-nav-item" href="#">Ofertas</a>
+      <a class="apple-nav-item" href="#">Soporte</a>
+    </div>
+
+    <div class="flex items-center space-x-6">
+      <span class="material-symbols-outlined text-lg cursor-pointer">search</span>
+      <span class="material-symbols-outlined text-lg cursor-pointer">shopping_bag</span>
+    </div>
+  </div>
+</nav>
+
+<!-- SUB HEADER -->
+<div class="w-full border-b border-neutral-200 dark:border-neutral-800 bg-white/90 dark:bg-black/90">
+  <div class="max-w-[1024px] mx-auto flex items-center justify-between h-12 px-4 md:px-0">
+    <h2 class="text-xl font-semibold">Localizador</h2>
+    <div class="flex items-center text-xs text-blue-600 dark:text-blue-400 cursor-pointer">
+      Ver especificaciones
+      <span class="material-symbols-outlined text-xs ml-1">expand_more</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="max-w-[1024px] mx-auto px-4 py-12 md:py-20">
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+
+    <!-- INFO -->
+    <div class="md:col-span-5 order-2 md:order-1">
+
+      <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-4">
+        Apple AirTag — Nunca vuelvas a perder tus cosas.
+      </h1>
+
+      <div class="space-y-1 mb-8">
+        <p class="text-xl font-medium">$34.990</p>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          Iva incluido · Garantía 
+        </p>
+      </div>
+
+      <div class="mb-8">
+        <label class="block text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-2 px-1">
+          Tipo de entrega
+        </label>
+        <select class="w-full appearance-none bg-transparent border border-neutral-300 dark:border-neutral-700 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none ">
+          <option>Compra hoy y recibe el mismo día en Stgo.</option>
+        </select>
+      </div>
+
+      <div class="border-t border-neutral-200 dark:border-neutral-800 pt-8 mb-8">
+        <div class="flex items-start gap-4 mb-6">
+          <span class="material-symbols-outlined text-neutral-400">local_shipping</span>
+          <div>
+            <p class="text-sm font-semibold">Entrega rápida</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">Disponible para envío inmediato</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">Despacho sin costo</p>
+            <a class="text-sm text-primary flex items-center mt-1" href="#">
+              Ver condiciones de envío
+              <span class="material-symbols-outlined text-sm ml-1">arrow_circle_right</span>
+            </a>
+          </div>
+        </div>
+
+        <button class="w-full bg-primary hover:bg-blue-600 text-white font-medium py-4 px-6 rounded-xl transition-colors mb-6">
+          Agregar al carro
+        </button>
+
+        <div class="p-4 bg-neutral-50 dark:bg-neutral-900 rounded-xl">
+          <h3 class="text-sm font-semibold mb-1">¿Lo quieres después?</h3>
+          <p class="text-xs text-neutral-600 dark:text-neutral-400 mb-3">
+            Guarda este AirTag y vuelve cuando quieras. Lo tendrás listo para comprar.
+          </p>
+          <a class="text-sm text-primary flex items-center font-medium" href="#">
+            <span class="material-symbols-outlined text-sm mr-2">bookmark</span>
+            Guardar AirTag
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-neutral-200 dark:border-neutral-800 pt-6">
+        <div class="flex items-center gap-4 text-sm">
+          <span class="material-symbols-outlined text-neutral-500">chat_bubble</span>
+          <p class="text-neutral-600 dark:text-neutral-400">
+            Obtén ayuda para comprar tu AirTag<br/>
+            <a class="text-primary font-medium inline-flex items-center" href="#">
+              Chatea ahora
+              <span class="material-symbols-outlined text-[10px] ml-1">open_in_new</span>
+            </a>
+            o llámanos al 800 393 399
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- IMAGES -->
+    <div class="md:col-span-7 order-1 md:order-2">
+      <div class="sticky top-24 text-center">
+        <img class="w-4/5 mx-auto object-contain" src="/airtag-double-select-202104.jpeg" alt="Apple AirTag"/>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-neutral-50 dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-800 py-12">
+  <div class="max-w-[1024px] mx-auto px-4 md:px-0">
+    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-6">
+      * Apple AirTag es una marca registrada de Apple Inc. Tienda del Valle no está afiliada ni respaldada por Apple. Las imágenes son referenciales.
+    </p>
+
+    <div class="flex flex-wrap gap-4 text-xs text-neutral-600 dark:text-neutral-500">
+      <span>© 2024 Tienda del Valle</span>
+      <a class="hover:underline" href="#">Política de Privacidad</a>
+      <a class="hover:underline" href="#">Términos de Uso</a>
+      <a class="hover:underline" href="#">Ventas y Reembolsos</a>
+    </div>
+  </div>
+</footer>
+
+<!-- DARK MODE -->
+<button class="fixed bottom-6 right-6 w-12 h-12 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-full shadow-lg flex items-center justify-center z-50"
+onclick="document.documentElement.classList.toggle('dark')">
+  <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+  <span class="material-symbols-outlined hidden dark:block text-yellow-400">light_mode</span>
+</button>
+
+</body>
+</html>
