@@ -24,7 +24,7 @@ const products = [
     // PrecioAntiguo
     price: "$40.990",
     // PrecioDeVenta
-    originalPrice: "36.990",
+    originalPrice: "35.990",
     img: "airtag-double-select-202104.jpeg",
     stock: "Disponible"
   },
