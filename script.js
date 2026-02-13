@@ -13,7 +13,7 @@ const products = [
     title: "Apple Pencil Usb C",
     desc: "iPad Pro de 13 pulgadas (M4), iPad Pro de 12.9 pulgadas (6.ª generación), iPad Pro de 12.9 pulgadas (5.ª generación).",
     price: "$144.990",
-    originalPrice: "$137.990",
+    originalPrice: "$118.791",
     img: "tagclappenuc00_370_other_1.webp",
     stock: "Disponible"
   },

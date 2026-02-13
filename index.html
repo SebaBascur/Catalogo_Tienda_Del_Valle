@@ -8,28 +8,92 @@
 </head>
 <body>
 
-  <header>
-    <h1 class="logo">
-      Tienda <span class="highlight">Del Valle</span>
-    </h1>
-    <h2>
-      Despacho gratis en Santiago (compra hasta las 13:00 hrs. y recibe hoy).
-      Resto de Chile: envío por pagar vía empresa a convenir
-    </h2>
+<header style="font-family: Arial, sans-serif;">
 
-    <div class="ml-banner" style="text-align: center;">
-  ⭐ Somos vendedores activos en Mercado Libre Chile  
-  +X ventas | Reputación positiva | Compra con confianza
-</div>
+<style>
+  .tdv-topbar {
+    background:#ffe600;
+    padding:10px 12px;
+  }
 
-    <div class="search-container">
+  .tdv-row {
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .tdv-logo img {
+    width:42px;
+    height:auto;
+    display:block;
+  }
+
+  .tdv-search {
+    flex:1;
+  }
+
+  .tdv-search input {
+    width:100%;
+    padding:10px 14px;
+    border-radius:8px;
+    border:none;
+    font-size:14px;
+    background:#f3f3f3;
+    outline:none;
+  }
+
+  .tdv-icons {
+    width:70px;           /* espacio reservado */
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    flex-shrink:0;        /* evita que se compriman */
+  }
+
+  /* Desktop */
+  @media (min-width:769px){
+    .tdv-logo img { width:120px; }
+
+    .tdv-search input {
+      max-width:600px;
+      margin:0 auto;
+      display:block;
+    }
+
+    .tdv-icons { width:90px; }
+  }
+</style>
+
+<div class="tdv-topbar">
+  <div class="tdv-row">
+
+    <!-- LOGO -->
+    <div class="tdv-logo">
+      <picture>
+        <source media="(max-width:768px)" srcset="logo__small@2x.png">
+        <img src="logo_large_plus@2x.webp" alt="Logo">
+      </picture>
+    </div>
+
+    <!-- BUSCADOR -->
+    <div class="tdv-search">
       <input
         type="text"
         id="searchInput"
-        placeholder="Buscar producto, modelo o color..."
-      />
+        placeholder="Estoy buscando..."
+      >
     </div>
-  </header>
+
+    <!-- ICONOS -->
+    <div class="tdv-icons">
+      ☰
+      🛒
+    </div>
+
+  </div>
+</div>
 
   <!-- ✅ BANNER -->
   <section
