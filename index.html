@@ -21,7 +21,7 @@
     margin:0 auto;
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
   }
 
   .tdv-logo img {
@@ -32,6 +32,7 @@
 
   .tdv-search {
     flex:1;
+    margin-right:10px;
   }
 
   .tdv-search input {
@@ -45,16 +46,19 @@
   }
 
   .tdv-icons {
-    width:70px;           /* espacio reservado */
     display:flex;
-    justify-content:space-between;
+    align-items:center;
+    gap:18px;
     font-size:20px;
-    flex-shrink:0;        /* evita que se compriman */
+    flex-shrink:0;
   }
 
   /* Desktop */
   @media (min-width:769px){
-    .tdv-logo img { width:120px; }
+
+    .tdv-logo img { 
+      width:120px; 
+    }
 
     .tdv-search input {
       max-width:600px;
@@ -62,7 +66,10 @@
       display:block;
     }
 
-    .tdv-icons { width:90px; }
+    .tdv-icons {
+      gap:24px;
+      font-size:22px;
+    }
   }
 </style>
 
@@ -94,6 +101,39 @@
 
   </div>
 </div>
+
+<!-- INFO DESPACHO -->
+<div style="
+      background:#f5f5f5;
+      padding:10px;
+      font-size:14px;
+      text-align:center;
+      color:#333;
+    ">
+  🚚 Despacho gratis en Santiago (compra hasta las 13:00 hrs. y recibe hoy).
+  <span style="margin:0 10px; color:#ccc;">|</span>
+  🇨🇱 Resto de Chile: envío por pagar vía empresa a convenir
+</div>
+
+<!-- PRUEBA SOCIAL -->
+<div style="
+      background:#ffffff;
+      padding:12px;
+      text-align:center;
+      font-size:14px;
+      font-weight:500;
+      border-bottom:1px solid #eaeaea;
+    ">
+  ⭐⭐⭐⭐ Vendedores activos en Mercado Libre Chile
+  <span style="margin:0 10px; color:#ccc;">|</span>
+  +X ventas
+  <span style="margin:0 10px; color:#ccc;">|</span>
+  Reputación positiva
+  <span style="margin:0 10px; color:#ccc;">|</span>
+  Compra con confianza
+</div>
+
+</header>
 
   <!-- ✅ BANNER -->
   <section
