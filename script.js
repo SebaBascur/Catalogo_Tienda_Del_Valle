@@ -498,7 +498,7 @@ function showModal(idx) {
   };
 }
 
-const wsapNumber = "56954368"; // Cambia por tu número real
+const wsapNumber = "56954354068"; // Cambia por tu número real
 
 function buyProduct(idx, qty) {
   const prod = products[idx];
