@@ -4,9 +4,9 @@ const products = [
     title: "Magic Keyboard (USB-C) Apple Español (América Latina)",
     desc: "El Magic Keyboard permite escribir con mayor comodidad y precisión.",
     price: "$201.990",
-    originalPrice: "$149.990" ,
+    originalPrice: "$149.990",
     img: "Magic Keyboard (USB-C) - Español (América Latina).jpeg",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   // 2
   {
@@ -15,7 +15,7 @@ const products = [
     price: "$144.990",
     originalPrice: "$118.791",
     img: "tagclappenuc00_370_other_1.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   // 3
   {
@@ -26,7 +26,7 @@ const products = [
     // PrecioDeVenta
     originalPrice: "35.990",
     img: "airtag-double-select-202104.jpeg",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //4
   {
@@ -35,7 +35,15 @@ const products = [
     price: "24.990",
     originalPrice: "26.990",
     img: "1cargador-apple.png",
-    stock: "Disponible"
+    stock: "Disponible",
+  },
+    {
+    title: "Auriculares Earpods Conector Lightning Color Blanco Apple",
+    desc: "Los EarPods con conector Lightning tienen también un controlador incorporado que te permite ajustar el volumen",
+    price: "$18.624",
+    // originalPrice: "$20.693",
+    img: "D_NQ_NP_2X_847211-MLA96151336003_102025-F.webp",
+    stock: "Disponible",
   },
   {
     title: "Parlante Portátil Bose Soundlink Flex 2da generación Color: Negro.",
@@ -43,7 +51,7 @@ const products = [
     price: "$189.990",
     originalPrice: "$145.990",
     img: "boseNegro.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //5
   {
@@ -52,45 +60,47 @@ const products = [
     price: "$88.736",
     originalPrice: "79.990",
     img: "budsWhite.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   // 5
   {
     title: "Bolso Tablet Color: Rosa",
-    desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\"",
+    desc: 'Bolso impermeable para tablets y iPad de hasta 11" compatible con Galaxy Tab e iPad 11"',
     price: "$22.990",
     originalPrice: "$20.990",
     img: "bolso rosa tablet.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
 
-    {
+  {
     title: "Bolso Tablet Color: Negro",
-    desc: "Bolso impermeable para tablets y iPad de hasta 11\" compatible con Galaxy Tab e iPad 11\"",
+    desc: 'Bolso impermeable para tablets y iPad de hasta 11" compatible con Galaxy Tab e iPad 11"',
     price: "$22.990",
     originalPrice: "$20.990",
     img: "bolso negro.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
 
 
   // 6
   {
-    title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Negro",
+    title:
+      "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Negro",
     desc: "Funda silicona liviana, resistente, soporte plegable, elegante.",
     price: "$19.990",
     // originalPrice: "$24.990",
     img: "D_NQ_NP_2X_705437-MLC90843957066_082025-F-funda-samsung-galaxy-tab-s9-fe-s10-fe-tapa-magnetica-silicon.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   // 7
   {
-    title: "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Rosa",
+    title:
+      "Funda Samsung Galaxy Tab S9 Fe S10 Fe Tapa Magnética Silicon Color: Rosa",
     desc: "Funda silicona liviana, resistente, soporte plegable, elegante.",
     price: "$19.990",
     // originalPrice: "$24.990",
     img: "D_NQ_2X_737383-MLA90844235628_082025-B.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   {
     title: "Hub Usb Ugreen Uno 7 En 1 Azul Oscuro",
@@ -98,7 +108,7 @@ const products = [
     price: "$64.990",
     // originalPrice: "$24.990",
     img: "D_NQ_NP_2X_804045-MLA93967788875_102025-F-hub-usb-ugreen-uno-7-en-1-azul-oscuro.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   {
     title: "Bateria Externa Xtorm 20000 Mah Blanco",
@@ -106,26 +116,26 @@ const products = [
     price: "$27.990",
     // originalPrice: "$24.990",
     img: "bateriaBlanca.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-  
-      {
+
+  {
     title: "Bateria Externa Xtorm 20000 Mah Negra",
     desc: "Batería externa de alta capacidad con carga rápida y diseño compacto.",
     price: "$27.990",
     // originalPrice: "$24.990",
     img: "w=800,h=800,fit=pad (1).jpeg",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-  
+
   // 8
-    {
+  {
     title: "Protectores De Silicona Joycon Switch 2 Color: Azul Y Rojo",
     desc: "Este producto es un kit de fundas de silicona diseñada especialmente para los controles Joy-Con del Nintendo Switch 2.",
     price: "$9.990",
     // originalPrice: "$14.990",
     img: "Protectores De Silicona Joycon Switch 2.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2",
@@ -133,7 +143,7 @@ const products = [
     price: "$23.380",
     // originalPrice: "$14.990",
     img: "bolsomario Switch2.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //9
   {
@@ -142,7 +152,7 @@ const products = [
     price: "24.990",
     // originalPrice: "$14.990",
     img: "1.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   {
     title: "Bolso Estuche Rígido Para Nintendo Switch 2 Color: Negro",
@@ -150,7 +160,7 @@ const products = [
     price: "24.990",
     // originalPrice: "$14.990",
     img: "2.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   {
     title: "Ventilador Enfriador Ps5 Usb Silencioso",
@@ -158,47 +168,50 @@ const products = [
     price: "24.990",
     // originalPrice: "$14.990",
     img: "Ventilador Enfriador Ps5 Usb Silencioso.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
 
-  
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Agua",
+    title:
+      "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Agua",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
     // originalPrice: "$14.990",
     img: "penv2.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-  
+
   //10
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Verde",
+    title:
+      "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Verde",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
     // originalPrice: "$14.990",
     img: "pen verde .png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-  // 11 
+  // 11
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Rosa",
+    title:
+      "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Rosa",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.480",
     // originalPrice: "$14.990",
     img: "Diseño sin título.jpg",
-    stock: "No disponible"
+    stock: "No disponible",
   },
   // 12
   {
-    title: "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Negro",
+    title:
+      "Funda Silicona Para S Pen Samsung Galaxy Tab S10 S9 S8 S7 color: Negro",
     desc: "Funda silicona premium, protege, cómoda, segura, duradera.",
     price: "$10.990",
     // originalPrice: "$14.990",
     img: "pen negro.png",
-    stock: "No disponible"
+    stock: "No disponible",
   },
-//13
+  //13
   // Inicio Pulseras
   // aZul
   {
@@ -207,7 +220,7 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "Swazul.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //14
   {
@@ -216,18 +229,18 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "AZULV2.jpeg",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //15
-  // Azul Claro 
+  // Azul Claro
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
     desc: "Fabricadas en silicona de alta calidad, resistentes, cómodas y ajustables. Diseñadas para un uso diario con estilo deportivo y elegante. Color: Azul Claro",
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "azul claro.png",
-    stock: "Disponible"
-  }, 
+    stock: "Disponible",
+  },
   //16
   // Rosa claro
   {
@@ -236,7 +249,7 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "rosa claro.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //17
   {
@@ -245,8 +258,8 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "rosa claro.png",
-    stock: "Disponible"
-  }, 
+    stock: "Disponible",
+  },
   //18
   {
     title: "Correa Para Galaxy Watch 8 44mm - Reloj Pulsera",
@@ -254,7 +267,7 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "lavanda_Morado.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //19
   {
@@ -263,8 +276,8 @@ const products = [
     price: "$15.780",
     // originalPrice: "$19.990",
     img: "verde.png",
-    stock: "Disponible"
-  },  
+    stock: "Disponible",
+  },
   //20
   {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Rosa",
@@ -272,45 +285,45 @@ const products = [
     price: "$8.980",
     // originalPrice: "$19.990",
     img: "rosaBuds.png",
-    stock: "Disponible"
-  }, 
-//21
+    stock: "Disponible",
+  },
+  //21
   {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Gris",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
     price: "$8.980",
     // originalPrice: "$19.990",
     img: "grisBuds.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-//22 
+  //22
   {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Verde",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
     price: "$8.980",
     // originalPrice: "$19.990",
     img: "verdeBuds.png",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-//23 
+  //23
   {
     title: "Funda De Samsung Galaxy Buds 3 Y 3 Pro Color: Negro",
     desc: "Protección contra golpes y rasguños con un diseño elegante, duradero y fácil de limpiar.",
     price: "$8.980",
     // originalPrice: "$19.990",
     img: "negroBuds.png",
-    stock: "Disponible"
-  }, 
+    stock: "Disponible",
+  },
 
-//24
-// fin de pulseras
+  //24
+  // fin de pulseras
   {
     title: "Protector De Teclado 12 - 14 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona. Color: Morado",
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "D_NQ_NP_2X_925702-MLC91283729848_092025-F-protector-de-teclado-12-14-y-15-17-pulgadas.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //25
   {
@@ -319,7 +332,7 @@ const products = [
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "azul protector de teclado.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //26
   {
@@ -328,7 +341,7 @@ const products = [
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "transparente protector de teclado.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //27
   {
@@ -337,9 +350,9 @@ const products = [
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "rosa claro.jpeg",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-//28
+  //28
   // 15 - 17 Pulgadas
   {
     title: "Protector De Teclado 15 - 17 Pulgadas",
@@ -347,7 +360,7 @@ const products = [
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "azul protector de teclado.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //29
   {
@@ -356,7 +369,7 @@ const products = [
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "transparente protector de teclado.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
   //30
   {
@@ -365,17 +378,18 @@ const products = [
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "rosado claro.webp",
-    stock: "Disponible"
+    stock: "Disponible",
   },
-
+  //31
   {
     title: "Protector De Teclado 15 - 17 Pulgadas",
     desc: "Protege tu laptop con estilo gracias a nuestros protectores de teclado de silicona.",
     price: "$6.980",
     // originalPrice: "$9.990",
     img: "D_NQ_NP_2X_925702-MLC91283729848_092025-F-protector-de-teclado-12-14-y-15-17-pulgadas.webp",
-    stock: "Disponible"
-  }
+    stock: "Disponible",
+  },
+  //32
 ];
 
 // Renderizado de productos (soporta búsqueda)
@@ -506,13 +520,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const filtered = products.filter(
       (p) =>
         p.title.toLowerCase().includes(query) ||
-        (p.desc && p.desc.toLowerCase().includes(query))
+        (p.desc && p.desc.toLowerCase().includes(query)),
     );
     buildCatalog(filtered);
   });
 
   // Cerrar la modal al hacer click en el fondo, pero NO al hacer click en el contenido
-  document.getElementById("modal").addEventListener("click", function(e) {
+  document.getElementById("modal").addEventListener("click", function (e) {
     if (e.target === this) {
       this.style.display = "none";
     }
